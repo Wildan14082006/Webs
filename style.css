@@ -1,0 +1,99 @@
+:root{
+    --text :#333;
+    --bg :#2ecc71;
+    --main-color: #000000;
+    --secondary-color: #2ecc71;
+    --font-color: #333;
+    --background-color: #ffffff;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    margin:0;
+    padding:0;
+}
+.manto{
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.mantoback{
+    position: relative;
+}
+.mantoback img{
+    width: 1500px;
+    height: 500px;
+}
+.mantoman{
+    margin-top: 10px;
+}   
+.mantoprof img{
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    border: 2px solid white;    
+    position: absolute;
+    z-index: 10;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.deskripsi h1{
+    color: var(--main-color);
+    text-align: center; 
+}
+.hobi h1{
+    margin-top: 20px;
+    text-align: center;
+}
+hobi-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.card{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto; 
+    box-sizing: border-box;
+    
+}
+.card h2{
+    color: var(--secondary-color);
+}
+.card p{
+    color: var(--text);
+    line-height: 1.6;
+}
+.card img,
+.cards img{
+    width: auto;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 5px;
+    margin: 0;
+    display: block;
+    
+}
+
+.cards{
+    text-align: center;
+}
